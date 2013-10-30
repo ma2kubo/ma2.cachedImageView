@@ -1,0 +1,13 @@
+{
+	"id": "ma2.cachedImageView",
+	"name": "ma2.cachedImageView",
+	"description" : "",
+	"author": "kazuhiro matsukubo",
+	"version": "1.0",
+	"copyright":"Copyright (c) 2013",
+	"license":"MIT License",
+	"min-alloy-version": "1.0",
+	"min-titanium-version":"3.1",
+	"tags":"",
+	"platforms":"ios"
+}
