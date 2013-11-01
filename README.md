@@ -32,6 +32,8 @@ $.imageView.image = "http://hoge.com/hoge.png"
 
 
 ## Changelog
+* 1.1
+  * caching method enable to work
 * 1.0
   * Initial version
 
