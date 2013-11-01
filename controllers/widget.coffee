@@ -1,5 +1,5 @@
 setImage = (image) ->
-  if _.isString(image)    
+  if _.isString(image)
     file = getCacheFile(image)
     if file.exists() and file.read().toString() isnt "0"
       $.imageView.image = file.read()
@@ -8,7 +8,6 @@ setImage = (image) ->
     $.imageView.imagePath = image
   else
     $.imageView.image = image
-    $.imageView.imagePath = null
   
 getImage = ->
   $.imageView.imagePath or $.imageView.image
@@ -21,9 +20,8 @@ clearCache = ->
 caching = ->
   if $.imageView.imagePath?
     file = getCacheFile $.imageView.imagePath
-    file.deleteFile() if file.exists()
     file.write Ti.UI.createImageView(
-      image: $.imageView.image
+      image: $.imageView.toBlob()
       width: Ti.UI.SIZE
       height: Ti.UI.SIZE
       preventDefaultImage: true
